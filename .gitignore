@@ -1,0 +1,4 @@
+.vscode/*
+nodejs/todo-app/node_modules/*
+
+.env
