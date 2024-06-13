@@ -50,7 +50,7 @@ jobs:
     #   cd 
     #   docker build . -t todo-app
 
-    - 
+    # - 
     #   name: Docker Login
     #   uses: docker/login-action@v2.0.0
     #   with: 
