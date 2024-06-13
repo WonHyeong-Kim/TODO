@@ -8,7 +8,7 @@ RUN mkdir -p /todo
 WORKDIR /todo
 
 # 가능한 package.json 과 package-lock.json을 모두 복사하기 위해서 와일드 카드 사용
-# COPY ./nodejs/todo-app/package*.json /todo/
+COPY ./nodejs/todo-app/package*.json /todo/
 
 COPY ./nodejs/todo-app/* /todo
 
@@ -16,7 +16,7 @@ COPY ./nodejs/todo-app/* /todo
 RUN npm install
 
 # 앱 소스코드 추가
-# COPY ./nodejs/todo-app/index.js /todo/
+COPY ./nodejs/todo-app/index.js /todo/
 
 # 앱이 3000번 포트에 바인딩 되어있기 때문에 컨테이너의 3000번 포트를 열어줌
 EXPOSE 3000
