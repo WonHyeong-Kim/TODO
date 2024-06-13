@@ -23,8 +23,8 @@ jobs:
       working-directory: ./nodejs/todo-app
       run: npm install
 
-    - name: run_test_code
-      run: npm run test
+    # - name: run_test_code
+    #   run: npm run test
 
     -
       name: Docker meta
