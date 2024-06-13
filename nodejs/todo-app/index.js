@@ -36,7 +36,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // 직접 설정할 변수
 const MY_CALENDAR =
-    "https://calendar.google.com/calendar/embed?src=vbvbfgfg%40gmail.com&ctz=Asia%2FSeoul";
+    "vbvbfgfg@gmail.com";
+    // "https://calendar.google.com/calendar/embed?src=vbvbfgfg%40gmail.com&ctz=Asia%2FSeoul";
 const COLOR_ID = 2; // 이벤트 색 (1: '#a4bdfc', 2: '#7ae7bf', 3: '#dbadff', 4: '#ff887c', 5: '#fbd75b', 6: '#ffb878', 7: '#46d6db', 8: '#e1e1e1', 9: '#5484ed', 10: '#51b749', 11: '#dc2127')
 
 // If modifying these scopes, delete token.json.
