@@ -20,11 +20,11 @@ jobs:
         node-version: "14.x"
 
     - name: npm_install
-      working-directory: ../nodejs/todo-app
+      working-directory: ./nodejs/todo-app
       run: npm install
         
     - name: run_test_code
-      working-directory: ../nodejs/todo-app
+      working-directory: ./nodejs/todo-app
       run: npm test
 
     -
