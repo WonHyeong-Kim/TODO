@@ -42,7 +42,8 @@ jobs:
         file: ./nodejs/todo-app/Dockerfile
         platforms: linux/amd64
         push: true
-        tags: ${{ steps.docker_meta.outputs.tags }}
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/test:1.0
+        # tags: ${{ steps.docker_meta.outputs.tags }}
         labels: ${{ steps.docker_meta.outputs.labels }}
 
     # - name: Build docker image
