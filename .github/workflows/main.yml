@@ -22,6 +22,8 @@ jobs:
     - name: run_test_code
       working-directory: ./nodejs/todo-app
       run: npm install
+
+    - name: run_test_code
       run: npm run test
 
     -
