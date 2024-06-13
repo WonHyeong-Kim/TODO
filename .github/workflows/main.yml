@@ -13,10 +13,17 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: Run a one-line script
-      run: |
-      npm install jest --save-dev
-      npm test
+    
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: "14.x"
+
+    - name: npm_install
+      run: npm install
+        
+    - name: run_test_code
+      run: npm test
 
     -
       name: Docker meta
